@@ -14,6 +14,7 @@ get "/" do
 	json_exists ? json_modified_time.to_s : ""
 end
 
-get "*" do
+options "*" do
 	headers "Access-Control-Allow-Origin" => "http://bgg-inventory.com"
+	200
 end
