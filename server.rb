@@ -18,6 +18,6 @@ get "/" do
 end
 
 get "/api/v1/games.json" do
-	response['Access-Control-Allow-Origin'] = "http://bgg-inventory.com"
+	response.headers['Access-Control-Allow-Origin'] = "http://bgg-inventory.com"
 	games_json
 end
