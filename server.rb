@@ -13,3 +13,7 @@ get "/" do
 	end
 	json_exists ? json_modified_time.to_s : ""
 end
+
+get "*" do
+	headers "Access-Control-Allow-Origin" => "http://bgg-inventory.com"
+end
