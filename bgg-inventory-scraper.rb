@@ -115,7 +115,7 @@ end
 
 def main
 	games = fetch_top_games(500)
-	File.open("public/api/v1/games.json", "w") { |file| file.write(games.to_json) }
+	File.open("games.json", "w") { |file| file.write(games.to_json) }
 end
 
 main()
