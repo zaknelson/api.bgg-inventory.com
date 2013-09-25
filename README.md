@@ -1,0 +1,2 @@
+api.bgg-inventory.com
+=====================
