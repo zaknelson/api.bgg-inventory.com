@@ -71,7 +71,7 @@ class Game < JSONable
 end
 
 def fetch url
-	sleep 1
+	sleep 3
 	Nokogiri::HTML(open(url))
 end
 
